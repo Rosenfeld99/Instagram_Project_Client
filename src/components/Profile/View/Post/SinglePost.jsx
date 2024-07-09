@@ -26,12 +26,12 @@ const SinglePost = () => {
   }, [status]);
   console.log(singlePost);
   return (
-    <div>
+    <div >
       <NavTopMobile
         left={<CgChevronLeft onClick={() => nav(-1)} />}
         cenetr1={center}
       />
-      <div className=" absolute top-10 w-full">
+      <div className=" absolute top-10 w-full mx-auto">
         {loading ? <SkelotonPost /> : <FeedItem post={singlePost} />}
       </div>
     </div>

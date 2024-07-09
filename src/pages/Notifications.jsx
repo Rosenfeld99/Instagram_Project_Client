@@ -57,7 +57,7 @@ const Notifications = () => {
     </p>
   );
   return (
-    <div>
+    <div className="md:pl-24 xl:pl-60 2xl:pl-64 w-full max-w-[1150px] mx-auto md:px-5">
       <div>
         <NavTopMobile
           left={<CgChevronLeft onClick={() => nav(-1)} />}

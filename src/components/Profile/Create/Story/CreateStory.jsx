@@ -76,9 +76,9 @@ const CreateStory = ({
   const left = <MdClose onClick={handleCancel} />;
 
   return (
-    <div>
+    <div >
       {showPreview && (
-        <div className=" absolute w-full h-screen z-40 ">
+        <div className=" absolute top-0 left-0 h-screen w-full max-w-[700px] z-40">
           <div className=" flex justify-between text-white bg-gradient-to-b from-[#000000a9] to-transparent text-3xl absolute top-0 left-0 w-full p-3">
             <div>
               <MdClose onClick={handleCancel} />
@@ -98,7 +98,7 @@ const CreateStory = ({
               </div>
             </div>
           </div>
-          <img src={selectedImage} className=" h-screen object-cover" alt="" />
+          <img src={selectedImage} className=" h-screen w-full object-cover" alt="" />
           <div
             onClick={handleSave}
             className=" absolute text-white bottom-8 left-[50%] translate-x-[-50%] flex items-center gap-3 text-md font-semibold"

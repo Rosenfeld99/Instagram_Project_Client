@@ -16,12 +16,13 @@ const NavDesktop = () => {
   const path = location.pathname;
   console.log(path);
   const { userPersonale, handelResetStatus } = useUser();
+  console.log(userPersonale);
 
   const styleItemsNavbar = "cursor-pointer text-[28px] w-full xl:pr-16 2xl:pr-20 flex items-center gap-4 hover:bg-bgk_hover_light hover:dark:bg-bgk_hover_dark p-2 rounded-md"
 
   return (
     <div>
-      {localStorage[TOKEN_KEY] ? (
+      {localStorage[TOKEN_KEY] && userPersonale ? (
         <div className=" hidden md:block h-full fixed overflow-hidden border-r-[1.5px] border-btn_light dark:border-btn_dark bottom-0 z-40 dark:bg-bgk_dark bg-bgk_light">
           <div className=" flex flex-col items-center justify-between w-full h-full px-3 ">
             <div className=" flex items-center xl:items-start flex-col w-full flex-1 h-full gap-5 py-2">
