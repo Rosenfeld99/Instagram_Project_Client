@@ -57,18 +57,18 @@ const StoryList = ({
   };
 
   const scrollLeft = () => {
-    scrollRef.current.scrollBy({ left: -700, behavior: "smooth" });
+    scrollRef.current.scrollBy({ left: -500, behavior: "smooth" });
   };
 
   const scrollRight = () => {
-    scrollRef.current.scrollBy({ left: 700, behavior: "smooth" });
+    scrollRef.current.scrollBy({ left: 500, behavior: "smooth" });
   };
 
   return (
     <div className="relative flex items-center">
       {showLeftArrow && (
         <button
-          className="absolute left-0 z-10 bg-gray-400 text-txt_dark dark:text-txt_light p-1 rounded-full shadow-md"
+          className="absolute left-0 z-10 bg-gray-400 text-txt_dark dark:text-txt_light p-1 hidden md:block rounded-full shadow-md"
           onClick={scrollLeft}
         >
           <RiArrowLeftSLine size={24} />
@@ -182,7 +182,7 @@ const StoryList = ({
       </div>
       {showRightArrow && (
         <button
-          className="absolute right-0 z-10 bg-gray-400 text-txt_dark dark:text-txt_light p-1 rounded-full shadow-md"
+          className="absolute right-0  hidden md:block z-10 bg-gray-400 text-txt_dark dark:text-txt_light p-1 rounded-full shadow-md"
           onClick={scrollRight}
         >
           <RiArrowRightSLine size={24} />

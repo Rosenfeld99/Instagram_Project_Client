@@ -7,7 +7,7 @@ const EditProfile = () => {
   const title = <p className=" font-semibold">Edit profile</p>;
   const nav = useNavigate();
   return (
-    <div>
+    <div className="md:pl-24 xl:pl-60 2xl:pl-64 w-full max-w-[1150px] mx-auto md:px-5">
       <NavTopMobile
         left={
           <CgChevronLeft

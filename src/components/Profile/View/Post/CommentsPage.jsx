@@ -75,7 +75,7 @@ const CommentsPage = () => {
     }
   };
   return (
-    <div>
+    <div className="md:pl-24 xl:pl-60 2xl:pl-64 w-full max-w-[1150px] mx-auto md:px-5">
       <NavTopMobile
         left={<CgChevronLeft onClick={() => nav(-1)} />}
         cenetr1={center}
@@ -124,7 +124,7 @@ const CommentsPage = () => {
           showMsg={showMsg}
         />
       ))}
-      <div className=" flex items-center absolute bottom-0 w-full p-3 gap-2 border-t dark:border-btn_dark pb-16">
+      <div className=" flex items-center absolute bottom-0 w-full p-3 gap-2 border-t dark:border-btn_dark pb-16 max-w-[900px] mx-auto md:px-5">
         <div>
           <SquareImage
             src={

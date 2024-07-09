@@ -81,7 +81,7 @@ const FeedAccounts = ({
       {!intLoading ? (
         <div>
           {/* stories list */}
-          <div className="pt-14">
+          <div className="pt-14 pb-3 xl:px-20">
             <StoryList
               list={storiesList}
               fileRef={fileRef}

@@ -1,6 +1,4 @@
 import { GoHome, GoHomeFill } from "react-icons/go";
-import { FaRegCompass } from "react-icons/fa";
-import { FiPlusSquare } from "react-icons/fi";
 import { RiMessengerLine } from "react-icons/ri";
 import { BiMoviePlay, BiSearch } from "react-icons/bi";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -17,7 +15,7 @@ const NavMobile = () => {
 
   return (
     <div>
-      {localStorage[TOKEN_KEY] ? (
+      {localStorage[TOKEN_KEY] && userPersonale ? (
         <div className=" md:hidden fixed w-full overflow-hidden border-t-[1.5px] border-btn_light dark:border-btn_dark bottom-0 z-40 dark:bg-bgk_dark bg-bgk_light">
           <div className=" flex items-center justify-between px-6 sm:px-10 py-2">
             <div
@@ -30,7 +28,7 @@ const NavMobile = () => {
             </div>
             <div className="cursor-pointer text-[28px]">
               {/* <FaRegCompass /> */}
-              <BiSearch/>
+              <BiSearch />
             </div>
             <div className="cursor-pointer text-[28px]">
               <BiMoviePlay />
