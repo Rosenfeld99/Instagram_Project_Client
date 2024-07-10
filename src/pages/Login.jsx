@@ -34,7 +34,7 @@ const Login = () => {
 
   return (
     <div
-      className={`flex items-center flex-col justify-center gap-7 py-20 px-15 bg-white min-h-screen ${
+      className={`flex items-center flex-col justify-center gap-7 py-20 px-15 bg-white min-h-screen md:w-96 mx-auto ${
         error ? "p-10" : "p-20"
       } `}
     >
