@@ -158,8 +158,8 @@ const PersonaleProfile = () => {
         <UserProfile user={data?.user} />
       </div>
       <NavGalleryMobile userName={userName} />
-      Home
-      <DarkModeToggle />
+      {/* Home
+      <DarkModeToggle /> */}
     </div>
   );
 };
